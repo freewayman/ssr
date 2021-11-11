@@ -54,3 +54,33 @@ Linux VPS搭建SSR步骤概览
 
 10. 后面支付宝付款的时候选择创建协议就可以了，如下所示：
 ![](https://zhidao91.oss-cn-shanghai.aliyuncs.com/Content/2020/hostwinds/p9.jpg)
+
+## Hostwinds VPS连接账号信息获取
+在Hostwinds购买付款完成后，你就应该得到VPS连接的IP、用户名（Linux VPS用户名默认都是root）、密码。这个VPS连接信息你可以有两个途径获得：1、邮件发送；2、Hostwinds后台管理也是可以的。
+
+如果注册的时候填写的邮箱是正确的，那么你就会收到类似下面这个图这样的邮件：
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/2-2021/2021-9-2/1.jpg)
+
+邮件上你可以知道IP、用户名和密码，这三个要素就是你连接VPS的信息，缺一不可。
+
+另外如果你在邮件那里没有看到用户信息，那么在Hostwinds的后台也是有的。下面说说在管理后台怎么查看VPS账号信息。
+
+访问Hostwinds用户中心，如果你没有登录，那么就填写注册时候的邮箱和密码进行登录，就是你下单注册的时候填写的那个邮箱和密码。
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/2-2021/2021-9-2/2.jpg)
+
+登录进入后就可以看到你的VPS服务列表界面，点击你的VPS，如下所示：
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/2-2021/2021-9-2/3.jpg)
+ 
+然后再点击“Click Here to Manage This Server”的绿色按钮进入具体的管理界面：
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/2-2021/2021-9-2/4.jpg)
+进入管理页面后，就是如下所示：
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/2-2021/2021-9-2/5.jpg)
+在管理界面你可以看到当前管理这台VPS的IP、点击"View Password"按钮就可以看到密码了，如上图标记所示。而Linux VPS的用户名默认都是“root”，所以这里没有显示出来。
+
+所以不管是通过哪种方法，你都可以得到你的VPS的IP、账号（root）、密码，有了它，下面就可以讲解怎么进行连接了。
+
