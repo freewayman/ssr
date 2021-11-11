@@ -12,7 +12,7 @@ Linux VPS搭建SSR步骤概览
 
 下面我就分步骤讲解下Linux VPS搭建SSR的流程。
 
-## 购买Linux VPS
+## 1、购买Linux VPS
 
 首先确认不要使用任何其他的上网工具，网络是什么IP就是什么IP，不然可能需要人工审核，导致Hostwinds VPS 购买显示 "Pending" 状态， 不能即时创建服务激活。
 
@@ -55,7 +55,7 @@ Linux VPS搭建SSR步骤概览
 10. 后面支付宝付款的时候选择创建协议就可以了，如下所示：
 ![](https://zhidao91.oss-cn-shanghai.aliyuncs.com/Content/2020/hostwinds/p9.jpg)
 
-## Hostwinds VPS连接账号信息获取
+## 2、Hostwinds VPS连接账号信息获取
 在Hostwinds购买付款完成后，你就应该得到VPS连接的IP、用户名（Linux VPS用户名默认都是root）、密码。这个VPS连接信息你可以有两个途径获得：1、邮件发送；2、Hostwinds后台管理也是可以的。
 
 如果注册的时候填写的邮箱是正确的，那么你就会收到类似下面这个图这样的邮件：
@@ -83,4 +83,46 @@ Linux VPS搭建SSR步骤概览
 在管理界面你可以看到当前管理这台VPS的IP、点击"View Password"按钮就可以看到密码了，如上图标记所示。而Linux VPS的用户名默认都是“root”，所以这里没有显示出来。
 
 所以不管是通过哪种方法，你都可以得到你的VPS的IP、账号（root）、密码，有了它，下面就可以讲解怎么进行连接了。
+
+## 3、连接Hostwinds VPS
+
+有了上面的账号信息，我们就可以进行进行连接了。连接Linux VPS是需要连接工具的，市场上有很多，比如Xshell、Putty等。这里我推荐使用Xshell，因为它有复制、粘贴功能，操作方便一点。
+
+Xshell你可以搜索到官网下载或者其他网友的分享，我这里白百度网盘也搞了个备份，
+
+Xshell下载地址：https://pan.baidu.com/s/1wmuNI5SPws10vWCacMvY1w，提取码: tppw
+
+如果你是苹果Mac电脑使用工具稍微有点不同，可以百度搜索“Mac SSH客户端SecureCRT安装破解”，不过后面讲的连接方法基本是差不多的。
+
+把Xshell软件下载下来后解压安装好。
+
+下面说说具体使用Xshell连接Linux VPS的图文方法。
+
+1、打开Xshell，点击左上角“文件”-“新建”，打开连接弹出库。
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/2018-12-11/xshell-connect-linux-vps.jpg)
+
+2、在Xshell弹出框中输入IP和端口，端口一般是22默认，然后点击确认按钮，如下图所示
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/2018-12-11/xshell-connect-linux-vps-1.jpg)
+
+3、然后输入用户名root，勾选记住用户名。
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/2018-12-11/xshell-connect-linux-vps-2.jpg)
+
+4、然后输入密码，勾选记住密码，点击确定。
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/2018-12-11/xshell-connect-linux-vps-3.jpg)
+
+完成以上步骤后就可以看到连接成功的界面，如下图所示：
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/2018-12-11/xshell-connect-linux-vps-4.jpg)
+
+很多朋友连接的时候可能出现一句“WARNING! The remote SSH server rejected X11 forwarding request.”这样的警告信息（如下图所示），这个也是正常的，不用管它。
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/2-2021/2021-9-2/6.jpg)
+
+所以通过上面的方法正常情况下就可以连接Hostwinds的VPS了。
+
+PS：如果你没有连上，而是显示“显示SSH服务器拒绝了密码”错误，那么就可能是默认的密码不对，你就重置下密码就可以了，后面会介绍重置的方法。
 
