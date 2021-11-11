@@ -51,3 +51,6 @@ Linux VPS搭建SSR步骤概览
 9、下单完成后订单结果如下图所示：
 
 ![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/2018-07-25/Hostwinds-Order-Result.png)
+
+10. 后面支付宝付款的时候选择创建协议就可以了，如下所示：
+![](https://zhidao91.oss-cn-shanghai.aliyuncs.com/Content/2020/hostwinds/p9.jpg)
