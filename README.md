@@ -16,7 +16,7 @@ Linux VPS搭建SSR步骤概览
 
 首先确认不要使用任何其他的上网工具，网络是什么IP就是什么IP，不然可能需要人工审核，导致Hostwinds VPS 购买显示 "Pending" 状态， 不能即时创建服务激活。
 
-1、通过Hostwinds 优惠链接进入Hostwinds 首页，选择“VPS”下的"Linux Managed"，这里是最便宜的(注意千万不要选择页面上Get Hosted那个，那个是虚拟空间，不是VPS!!!)。Managed VPS要比Unmanaged VPS快很多，也更稳定。
+1、通过 [Hostwinds 优惠链接](https://www.hostwinds.com/3704.html) 进入Hostwinds 首页，选择“VPS”下的"Linux Managed"，这里是最便宜的(注意千万不要选择页面上Get Hosted那个，那个是虚拟空间，不是VPS!!!)。Managed VPS要比Unmanaged VPS快很多，也更稳定。
 
 ![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/2018-07-25/Hostwinds-Home-Page-1.jpg)
 
@@ -66,7 +66,7 @@ Linux VPS搭建SSR步骤概览
 
 另外如果你在邮件那里没有看到用户信息，那么在Hostwinds的后台也是有的。下面说说在管理后台怎么查看VPS账号信息。
 
-访问Hostwinds用户中心，如果你没有登录，那么就填写注册时候的邮箱和密码进行登录，就是你下单注册的时候填写的那个邮箱和密码。
+访问[Hostwinds用户中心](https://clients.hostwinds.com/clientarea.php) ，如果你没有登录，那么就填写注册时候的邮箱和密码进行登录，就是你下单注册的时候填写的那个邮箱和密码。
 
 ![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/2-2021/2021-9-2/2.jpg)
 
