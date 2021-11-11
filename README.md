@@ -126,3 +126,20 @@ Xshell下载地址：https://pan.baidu.com/s/1wmuNI5SPws10vWCacMvY1w，提取码
 
 PS：如果你没有连上，而是显示“显示SSH服务器拒绝了密码”错误，那么就可能是默认的密码不对，你就重置下密码就可以了，后面会介绍重置的方法。
 
+## 密码不对导致Hostwinds VPS连接不上
+
+如果只是密码不对，显示SSH服务器拒绝了密码，如下图使用Xshell连接的显示示意图：
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/1-2019/2019-1-7/cannot-connect-hostwinds-vps-wrong-password.jpg)
+
+Hostwinds 采用KVM，因此生成Linux VPS的密码的自动生成的，而Hostwinds发送的邮件中的密码可能不是VPS真实的密码，这时不知道密码是多少我们可以登录后台重新设置密码。
+
+进入前面介绍的Hostwinds后台VPS管理界面，然后点击修改密码按钮，在弹出框中重新输入密码，密码需要字母大小写、特殊符还有要一定长度：
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/1-2019/2019-1-7/cannot-connect-hostwinds-vps-wrong-password-step3.jpg)
+
+PS：修改后密码还没有生效，最关键的一步需要 重启服务器，才能生效，如下图所示点击重启：
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/1-2019/2019-1-7/cannot-connect-hostwinds-vps-wrong-password-step4.jpg)
+
+稍等几分钟等VPS重启好后，就能够使用你就可以使用你设置的密码登录 Hostwinds VPS了。
