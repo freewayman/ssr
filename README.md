@@ -220,4 +220,47 @@ bash ssr.sh
 
 这里只是完成SSR搭建，注意要安装后面的BBR加速看YouTube速度才会飞上去。
 
+## 安装BBR加速
 
+## 注意要装加速才能最快！！！
+
+## 注意要装加速才能最快！！！
+
+## 注意要装加速才能最快！！！
+
+BBR是Google的一款SSR加速产品，使用下面的命令就可以实现BBR加速，只有Hostwinds等少数KVM VPS才支持BBR加速，这也是我们推荐选择Hostwinds的原因。
+
+在xShell连接端输入，如下命令，然后回车：
+
+yum -y install wget
+wget –no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
+chmod +x bbr.sh
+./bbr.sh
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/1-2019/2019-1-6/ssr-bbr-setup-excute.jpg)
+
+然后按任意键进行部署
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/1-2019/2019-1-6/ssr-bbr-setup-excute-confirm.jpg)
+
+然后需要等待命令执行，大约5分钟，如下图所示：
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/1-2019/2019-1-6/ssr-bbr-setup-excute-confirmed.jpg)
+
+会在下面的图片过程中等待一会儿
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/1-2019/2019-1-6/ssr-bbr-setup-excute-confirmed1.jpg)
+
+最后完成后需要重启，根据提示输入：y，重启服务器即可生效
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/1-2019/2019-1-6/ssr-bbr-setup-reboot.jpg)
+
+如果错过了重启步骤，直接输入重启命令命令：
+
+reboot
+
+![](https://vps234.oss-cn-shanghai.aliyuncs.com/Content/1-2019/2019-1-6/ssr-bbr-setup-reboot-manual.jpg)
+
+然后耐心等待，待服务器重启后即可自动开启SSR加速。(这里注意如果是centos 7系统重启后可能防火墙阻止了SSR，需要关闭防火墙，如果是centos 6就不会有这个问题，所以我们建议使用的是Hostwinds的centos 6操作系统。)
+
+重新打开YouTube(油管)或者Google其他网站试一下，速度会快很多。
