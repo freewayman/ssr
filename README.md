@@ -14,6 +14,8 @@ Linux VPS搭建SSR步骤概览
 
 ## 1、购买Linux VPS
 
+我们需要购买 [Hostwinds](https://www.hostwinds.com/3704.html)，因为它可以免费换IP，就算被墙了没事。另外就是[Hostwinds](https://www.hostwinds.com/3704.html)有1000Mbps带宽，是目前速度最快的VPS之一，而且价格便宜，性价比很高。用来浏览油管（YouTube）、Facebook等网站非常的合适。
+
 首先确认不要使用任何其他的上网工具，网络是什么IP就是什么IP，不然可能需要人工审核，导致Hostwinds VPS 购买显示 "Pending" 状态， 不能即时创建服务激活。
 
 1、通过 [Hostwinds 优惠链接](https://www.hostwinds.com/3704.html) 进入Hostwinds 首页，选择“VPS”下的"Linux Managed"，这里是最便宜的(注意千万不要选择页面上Get Hosted那个，那个是虚拟空间，不是VPS!!!)。Managed VPS要比Unmanaged VPS快很多，也更稳定。
@@ -264,3 +266,11 @@ reboot
 然后耐心等待，待服务器重启后即可自动开启SSR加速。(这里注意如果是centos 7系统重启后可能防火墙阻止了SSR，需要关闭防火墙，如果是centos 6就不会有这个问题，所以我们建议使用的是Hostwinds的centos 6操作系统。)
 
 重新打开YouTube(油管)或者Google其他网站试一下，速度会快很多。
+
+## 下载客户端连接开始科学上网
+
+这个步骤别人写过了，我这里就不再啰嗦了可以参考 https://github.com/zhuifenging726/newer-tutorials/wiki/%E4%BD%BF%E7%94%A8Linux-VPS%E6%90%AD%E5%BB%BASSR%E7%A4%BA%E4%BE%8B%E6%95%99%E7%A8%8B#%E4%B8%8B%E8%BD%BDssr%E7%9A%84%E5%AF%B9%E5%BA%94%E7%9A%84ssr%E5%AE%A2%E6%88%B7%E7%AB%AF
+
+## SSR搭建科学上网方法总结
+
+以上就是SSR机场搭建教程，通过上面的图文操作你可以在电脑和手机上实现科学上网，访问Google、脸书（Facebook）、YouTube（油管）完全不是问题。有需要搭建SSR机场的用户可以参考选择。
